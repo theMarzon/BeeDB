@@ -2,12 +2,12 @@ import BeeDB from '../index.js';
 
 const database = new BeeDB('test');
 
-database.create('sexo', 'adios mundo');
-database.create('anal', 'adios mundo');
-database.create('agua', 'adios mundo');
+database.create('sexo', 'hola mundo');
+database.create('anal', 'hola mundo');
+database.create('agua', 'hola mundo');
 
 console.log(database.workspace());
 
-database.read();
+database.delete('sexo');
 
 console.log(database.workspace());
